@@ -13,7 +13,7 @@ import { RepositoryType } from "../../models/repository";
 export function Home() {
   const dispatch = useDispatch();
   const inputRef = useRef<HTMLInputElement | null>(null);
-  const { loading, error, success, data, open } = useSelector(
+  const { loading, success, data, open } = useSelector(
     (state: ReducersState) => {
       return {
         loading: state.Repository?.loading,
